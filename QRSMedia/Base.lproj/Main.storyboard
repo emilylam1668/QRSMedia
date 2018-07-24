@@ -71,6 +71,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="companyName" destination="xSL-hS-91I" id="pR7-vW-xml"/>
                                             <outlet property="logoImageView" destination="tXU-WE-NoY" id="jw7-Gf-BDE"/>
                                             <outlet property="usernameLabel" destination="eCm-6B-FDi" id="sbV-CJ-9vr"/>
                                         </connections>
@@ -144,8 +145,14 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEf-Nl-dWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="ukh-eR-7eu">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="401"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="nid-qg-vW5"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="1937" y="322"/>
+            <point key="canvasLocation" x="1937" y="369"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ft4-x6-YoW">
@@ -177,16 +184,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Username/Link" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pO-4B-eMn">
+                                <rect key="frame" x="20" y="537" width="335" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.68494515229716202" green="0.68163623851794874" blue="0.6882540660763754" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96442420176284349" green="0.96562797307661119" blue="0.97307265227309636" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="PwH-wb-SgR" secondAttribute="trailing" constant="20" id="6VA-UJ-lfv"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="Ih7-aB-SCx" secondAttribute="trailing" constant="20" id="6e3-xW-v9b"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" constant="30" id="DLu-3y-dY2"/>
+                            <constraint firstItem="4pO-4B-eMn" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" id="Iel-me-N8F"/>
+                            <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="4pO-4B-eMn" secondAttribute="trailing" constant="20" id="VPo-f5-me6"/>
                             <constraint firstItem="Ih7-aB-SCx" firstAttribute="top" secondItem="PwH-wb-SgR" secondAttribute="bottom" constant="30" id="YAb-rr-I4P"/>
                             <constraint firstItem="PwH-wb-SgR" firstAttribute="top" secondItem="oCR-fX-yot" secondAttribute="top" constant="50" id="ZZx-ZM-PiG"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="hWr-f5-Aw7"/>
                             <constraint firstItem="Ih7-aB-SCx" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="kaO-xj-DtV"/>
+                            <constraint firstItem="4pO-4B-eMn" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="qPa-e0-rGD"/>
+                            <constraint firstItem="CBe-hc-klP" firstAttribute="top" secondItem="4pO-4B-eMn" secondAttribute="bottom" constant="15" id="roa-6G-au5"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="bottom" secondItem="CBe-hc-klP" secondAttribute="bottom" constant="50" id="wmc-gQ-5H8"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="CBe-hc-klP" secondAttribute="trailing" constant="20" id="wo0-Af-0cB"/>
                             <constraint firstItem="PwH-wb-SgR" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="zh5-qV-SDi"/>
@@ -199,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rL4-CA-eW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="-556"/>
+            <point key="canvasLocation" x="1937" y="-709"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6tH-hb-40E">

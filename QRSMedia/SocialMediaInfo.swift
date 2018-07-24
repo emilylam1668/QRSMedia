@@ -27,8 +27,8 @@ struct CompanyUserData {
     //var whatsapp
     
     var allSocialMediaInfos: [SocialMediaInfo] {
-        fatalError("not implemented, yet")
-        //return []
+//        fatalError("not implemented, yet")
+        return [snapchat, instagram]
     }
 }
 
