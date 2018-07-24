@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -74,6 +75,7 @@
                                             <outlet property="companyName" destination="xSL-hS-91I" id="pR7-vW-xml"/>
                                             <outlet property="logoImageView" destination="tXU-WE-NoY" id="jw7-Gf-BDE"/>
                                             <outlet property="usernameLabel" destination="eCm-6B-FDi" id="sbV-CJ-9vr"/>
+                                            <segue destination="Fs8-Il-gBb" kind="show" identifier="displayData" id="k68-P2-zdf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -90,7 +92,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="0Bz-KH-VKZ" kind="show" id="CNn-yF-liB"/>
+                                    <segue destination="0Bz-KH-VKZ" kind="show" identifier="displayQR" id="CNn-yF-liB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -110,7 +112,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-info" id="OXJ-kG-Qlc"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="Fs8-Il-gBb" kind="show" id="eG2-59-TAG"/>
+                        <outlet property="tableView" destination="VVL-t7-Ldc" id="ulu-I0-tJF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -148,16 +150,81 @@
                 <view contentMode="scaleToFill" id="ukh-eR-7eu">
                     <rect key="frame" x="0.0" y="0.0" width="372" height="401"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-zr-mTm">
+                            <rect key="frame" x="0.0" y="0.0" width="372" height="401"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <prototypes>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSCustomCell" id="Yyk-1G-bnI" customClass="SSCompanyDataCell">
+                                    <rect key="frame" x="0.0" y="28" width="372" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yyk-1G-bnI" id="fHn-qT-Y5a">
+                                        <rect key="frame" x="0.0" y="0.0" width="372" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1ZK-sC-FTb">
+                                                <rect key="frame" x="15" y="2" width="39.5" height="39.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1ZK-sC-FTb" secondAttribute="height" multiplier="1:1" id="edn-AC-eqp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6au-ZZ-XAA">
+                                                <rect key="frame" x="69.5" y="13" width="272.5" height="18"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSCompany Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-xL-YCn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSUsername Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-50-QpD">
+                                                        <rect key="frame" x="136.5" y="0.0" width="136" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="QHC-50-QpD" firstAttribute="width" secondItem="sOR-xL-YCn" secondAttribute="width" id="XIE-SF-6TZ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6au-ZZ-XAA" firstAttribute="top" secondItem="fHn-qT-Y5a" secondAttribute="topMargin" constant="2" id="JCY-nn-kft"/>
+                                            <constraint firstItem="1ZK-sC-FTb" firstAttribute="leading" secondItem="fHn-qT-Y5a" secondAttribute="leading" constant="15" id="UoE-5t-Pqc"/>
+                                            <constraint firstItem="6au-ZZ-XAA" firstAttribute="leading" secondItem="1ZK-sC-FTb" secondAttribute="trailing" constant="15" id="dcr-pf-zAz"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6au-ZZ-XAA" secondAttribute="trailing" constant="15" id="eTa-GK-Ccc"/>
+                                            <constraint firstAttribute="bottom" secondItem="1ZK-sC-FTb" secondAttribute="bottom" constant="2" id="tCB-qH-vxt"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="6au-ZZ-XAA" secondAttribute="bottom" constant="2" id="urb-iu-07k"/>
+                                            <constraint firstItem="1ZK-sC-FTb" firstAttribute="top" secondItem="fHn-qT-Y5a" secondAttribute="top" constant="2" id="yz1-21-yJF"/>
+                                        </constraints>
+                                    </tableViewCellContentView>
+                                    <color key="backgroundColor" red="0.96953272739999996" green="0.97644562739999996" blue="0.99718432739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <outlet property="SScompanyName" destination="sOR-xL-YCn" id="Iex-wg-UwA"/>
+                                        <outlet property="SSlogoImageView" destination="1ZK-sC-FTb" id="8gM-8t-Lae"/>
+                                        <outlet property="SSusernameLabel" destination="QHC-50-QpD" id="MPR-nY-xks"/>
+                                    </connections>
+                                </tableViewCell>
+                            </prototypes>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9kt-zr-mTm" firstAttribute="trailing" secondItem="nid-qg-vW5" secondAttribute="trailing" id="6QU-HY-PFR"/>
+                        <constraint firstItem="9kt-zr-mTm" firstAttribute="bottom" secondItem="nid-qg-vW5" secondAttribute="bottom" id="Cwx-5O-uob"/>
+                        <constraint firstItem="9kt-zr-mTm" firstAttribute="leading" secondItem="nid-qg-vW5" secondAttribute="leading" id="iYd-Bw-Qy6"/>
+                        <constraint firstItem="9kt-zr-mTm" firstAttribute="top" secondItem="nid-qg-vW5" secondAttribute="top" id="sFW-N3-9Sz"/>
+                    </constraints>
                     <viewLayoutGuide key="safeArea" id="nid-qg-vW5"/>
                 </view>
             </objects>
             <point key="canvasLocation" x="1937" y="369"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed Social Media View Controller-->
         <scene sceneID="ft4-x6-YoW">
             <objects>
-                <viewController id="Fs8-Il-gBb" sceneMemberID="viewController">
+                <viewController id="Fs8-Il-gBb" customClass="DetailedSocialMediaViewController" customModule="QRSMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zZo-HC-3Wd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,6 +280,11 @@
                     <navigationItem key="navigationItem" id="E65-8F-JK7">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="mY6-Uw-tMX"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="companyLogoImageView" destination="PwH-wb-SgR" id="tYU-zA-gwV"/>
+                        <outlet property="companyNameLabel" destination="Ih7-aB-SCx" id="dl0-YK-boD"/>
+                        <outlet property="enterUsernameTextField" destination="CBe-hc-klP" id="Rfg-U5-jF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rL4-CA-eW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

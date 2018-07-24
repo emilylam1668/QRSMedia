@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
+    
+    var usernameData = Username[]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,26 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {return}
+        
+        switch identifier {
+        case "displayData":
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let cellSocialMediaInfo = companyUserData.allSocialMediaInfos[indexPath.row]
+            let destination = segue.destination as! DetailedSocialMediaViewController
+            destination.cellSocialMediaInfo = cellSocialMediaInfo
+            
+        default:
+            print("ya ya ya")
+        }
+    }
+    
+    
 
 }
 

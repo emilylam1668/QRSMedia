@@ -28,7 +28,7 @@ struct CompanyUserData {
     
     var allSocialMediaInfos: [SocialMediaInfo] {
 //        fatalError("not implemented, yet")
-        return [snapchat, instagram]
+        return [snapchat, instagram, facebook, twitter, linkedin, wechat, spotify, discord]
     }
 }
 
