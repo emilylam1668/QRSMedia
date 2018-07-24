@@ -16,6 +16,7 @@
 		D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */; };
 		D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306E2106A01D00DDBAFD /* QRViewController.swift */; };
 		D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */; };
+		D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringDataController.swift; sourceTree = "<group>"; };
 		D7B7306E2106A01D00DDBAFD /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDataCell.swift; sourceTree = "<group>"; };
+		D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
 				D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
+				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
 				D7B7303B2105A3B500DDBAFD /* Main.storyboard */,
 				D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */,
 				D7B730412105A3B700DDBAFD /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
 				D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
+				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
 				D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */,
 			);
