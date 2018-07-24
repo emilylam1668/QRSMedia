@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
-		D7B7303A2105A3B500DDBAFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* ViewController.swift */; };
+		D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */; };
 		D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B7303B2105A3B500DDBAFD /* Main.storyboard */; };
 		D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7B7303E2105A3B500DDBAFD /* QRSMedia.xcdatamodeld */; };
 		D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B730412105A3B700DDBAFD /* Assets.xcassets */; };
 		D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B730432105A3B700DDBAFD /* LaunchScreen.storyboard */; };
+		D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */; };
+		D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306E2106A01D00DDBAFD /* QRViewController.swift */; };
+		D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B730372105A3B500DDBAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7B730392105A3B500DDBAFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoController.swift; sourceTree = "<group>"; };
 		D7B7303C2105A3B500DDBAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7B7303F2105A3B500DDBAFD /* QRSMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QRSMedia.xcdatamodel; sourceTree = "<group>"; };
 		D7B730412105A3B700DDBAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7B730442105A3B700DDBAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7B730462105A3B700DDBAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringDataController.swift; sourceTree = "<group>"; };
+		D7B7306E2106A01D00DDBAFD /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				D7B730372105A3B500DDBAFD /* AppDelegate.swift */,
-				D7B730392105A3B500DDBAFD /* ViewController.swift */,
+				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
+				D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */,
+				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
 				D7B7303B2105A3B500DDBAFD /* Main.storyboard */,
+				D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */,
 				D7B730412105A3B700DDBAFD /* Assets.xcassets */,
 				D7B730432105A3B700DDBAFD /* LaunchScreen.storyboard */,
 				D7B730462105A3B700DDBAFD /* Info.plist */,
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */,
-				D7B7303A2105A3B500DDBAFD /* ViewController.swift in Sources */,
+				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
+				D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */,
+				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
+				D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
