@@ -278,7 +278,11 @@
                         <viewLayoutGuide key="safeArea" id="oCR-fX-yot"/>
                     </view>
                     <navigationItem key="navigationItem" id="E65-8F-JK7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mY6-Uw-tMX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mY6-Uw-tMX">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Fs8-Il-gBb" id="gVy-PA-WWn"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="companyLogoImageView" destination="PwH-wb-SgR" id="tYU-zA-gwV"/>

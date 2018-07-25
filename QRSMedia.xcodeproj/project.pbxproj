@@ -13,7 +13,7 @@
 		D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7B7303E2105A3B500DDBAFD /* QRSMedia.xcdatamodeld */; };
 		D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7B730412105A3B700DDBAFD /* Assets.xcassets */; };
 		D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B730432105A3B700DDBAFD /* LaunchScreen.storyboard */; };
-		D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */; };
+		D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */; };
 		D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B7306E2106A01D00DDBAFD /* QRViewController.swift */; };
 		D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */; };
 		D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */; };
@@ -30,7 +30,7 @@
 		D7B730412105A3B700DDBAFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7B730442105A3B700DDBAFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7B730462105A3B700DDBAFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringDataController.swift; sourceTree = "<group>"; };
+		D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedSocialMediaViewController.swift; sourceTree = "<group>"; };
 		D7B7306E2106A01D00DDBAFD /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		D7B730702106A1D800DDBAFD /* CompanyDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDataCell.swift; sourceTree = "<group>"; };
 		D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfo.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			children = (
 				D7B730372105A3B500DDBAFD /* AppDelegate.swift */,
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
-				D7B7306C21069FA800DDBAFD /* EnteringDataController.swift */,
+				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
 				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
 				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
@@ -159,7 +159,7 @@
 				D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */,
 				D7B730772107C60400DDBAFD /* SSCompanyDataCell.swift in Sources */,
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
-				D7B7306D21069FA800DDBAFD /* EnteringDataController.swift in Sources */,
+				D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
 				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,

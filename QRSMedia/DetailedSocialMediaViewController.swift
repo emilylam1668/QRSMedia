@@ -11,16 +11,33 @@ import UIKit
 
 class DetailedSocialMediaViewController: UIViewController {
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var companyLogoImageView: UIImageView!
+    @IBOutlet weak var companyNameLabel: UILabel!
+    @IBOutlet weak var enterUsernameTextField: UITextField!
+    
+    // MARK: - Properties
     var cellSocialMediaInfo: SocialMediaInfo!
+//    var username: Username?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
         enterUsernameTextField.text = cellSocialMediaInfo.username
+        
+        
+        
+   
     }
     
-    @IBOutlet weak var companyLogoImageView: UIImageView!
-    @IBOutlet weak var companyNameLabel: UILabel!
-    @IBOutlet weak var enterUsernameTextField: UITextField!
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        
+//        username?.username = enterUsernameTextField.text
+//        CoreDataHelper.saveUsername()
+        
+    }
+    
+
 }
