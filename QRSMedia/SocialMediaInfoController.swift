@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SocialMediaInfoController.swift
 //  QRSMedia
 //
 //  Created by Emily Lam on 7/22/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
 //    var usernames = [Username] () {
 //        didSet {
@@ -58,6 +58,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func appInstructionsDidTap(_ sender: Any) {
+        let alertAppInstructions = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
+        let dismissButton = UIAlertAction(title: "Dismiss", style: .default)
+        alertAppInstructions.addAction(dismissButton)
+        
+        self.present(alertAppInstructions, animated: true)
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else {return}
