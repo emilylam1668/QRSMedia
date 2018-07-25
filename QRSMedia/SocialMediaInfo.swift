@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct CompanyUserData {
+class CompanyUserData {
     var snapchat = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-snapchat_circled_logo"), companyTitle: "Snapchat")
     var instagram = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-instagram_new"), companyTitle: "Instagram")
     var facebook = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-facebook"), companyTitle: "Facebook")
@@ -31,7 +31,7 @@ struct CompanyUserData {
     }
 }
 
-struct SocialMediaInfo {
+class SocialMediaInfo {
     let image: UIImage
     let companyTitle: String
     var username: String
@@ -41,6 +41,4 @@ struct SocialMediaInfo {
         self.companyTitle = companyTitle
         self.username = ""
     }
-    
-    
 }

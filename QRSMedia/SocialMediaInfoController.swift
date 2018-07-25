@@ -24,10 +24,17 @@ class ViewController: UIViewController, UITableViewDataSource {
 //        usernames = CoreDataHelper.retrieveUsernames()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     let companyUserData = CompanyUserData()
@@ -41,7 +48,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CompanyDataCell
 
         let socialMediaInfo = companyUserData.allSocialMediaInfos[indexPath.row]
-//        socialMediaInfo.cell
         
         cell.companyName.text = socialMediaInfo.companyTitle
         cell.logoImageView.image = socialMediaInfo.image
@@ -67,8 +73,5 @@ class ViewController: UIViewController, UITableViewDataSource {
             print("ya ya ya")
         }
     }
-    
-    
-
 }
 

@@ -25,14 +25,22 @@ class DetailedSocialMediaViewController: UIViewController {
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
         enterUsernameTextField.text = cellSocialMediaInfo.username
-        
-        
-        
    
     }
     
+    @IBAction func canelButtonTapped(_ sender: Any) {
+        
+        //go back to the Home screen
+        navigationController!.popViewController(animated: true)
+    }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        
+        //update the username from the textfield into the cellSocialMediaInfo.username
+        cellSocialMediaInfo.username = enterUsernameTextField.text ?? ""
+        
+        //go back to the Home screen
+        navigationController!.popViewController(animated: true)
         
 //        username?.username = enterUsernameTextField.text
 //        CoreDataHelper.saveUsername()
