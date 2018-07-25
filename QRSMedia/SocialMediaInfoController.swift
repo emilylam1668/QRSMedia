@@ -10,10 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    var usernameData = Username[]
-
+    var usernames = [Username] () {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernames = CoreDataHelper.retrieveUsernames()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

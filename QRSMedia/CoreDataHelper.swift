@@ -24,7 +24,7 @@ struct CoreDataHelper {
 
 
     static func newUsername() -> Username {
-        let note = NSEntityDescription.insertNewObject(forEntityName: "Username", into: context) as! Username
+        let username = NSEntityDescription.insertNewObject(forEntityName: "Username", into: context) as! Username
 
         return username
     }
