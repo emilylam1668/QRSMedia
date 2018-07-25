@@ -127,7 +127,7 @@
         <!--Title-->
         <scene sceneID="azW-Dc-06O">
             <objects>
-                <viewController id="0Bz-KH-VKZ" sceneMemberID="viewController">
+                <viewController id="0Bz-KH-VKZ" customClass="QRViewController" customModule="QRSMedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zqe-nB-jME">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

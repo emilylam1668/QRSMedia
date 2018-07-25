@@ -6,4 +6,8 @@
 //  Copyright © 2018 Make School. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class QRViewController: UIViewController {
+    
+}
