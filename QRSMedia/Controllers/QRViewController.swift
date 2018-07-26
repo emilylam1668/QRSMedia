@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QRViewController: UIViewController {
+class QRViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,4 +27,5 @@ class QRViewController: UIViewController {
         self.present(alertSaveQR, animated: true)
     }
     
+    @IBOutlet weak var tableView: UITableView!
 }

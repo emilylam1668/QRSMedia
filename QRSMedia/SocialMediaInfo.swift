@@ -19,12 +19,11 @@ class CompanyUserData {
     var spotify = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-spotify"), companyTitle: "Spotify")
     var discord = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-discord_logo"), companyTitle: "Discord")
     
-    //var kakao
-    //var weibo
-    //var youtube
-    //var tumblr
-    //var skype
-    //var whatsapp
+    var weibo = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-weibo"), companyTitle: "Weibo")
+    var youtube = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-youtube"), companyTitle: "YouTube")
+    var tumblr = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-tumblr"), companyTitle: "Tumblr")
+    var skype = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-skype"), companyTitle: "Skype")
+    var whatsapp = SocialMediaInfo(image: #imageLiteral(resourceName: "icons8-whatsapp"), companyTitle: "WhatsApp")
     
     func loadFromUserDefaults() {
         for item in allSocialMediaInfos {
@@ -37,7 +36,7 @@ class CompanyUserData {
     }
     
     var allSocialMediaInfos: [SocialMediaInfo] {
-        return [snapchat, instagram, facebook, twitter, linkedin, wechat, spotify, discord]
+        return [snapchat, instagram, facebook, twitter, linkedin, wechat, spotify, discord, weibo, youtube, tumblr, skype, whatsapp]
     }
 }
 

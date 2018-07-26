@@ -104,20 +104,4 @@ class DetailedSocialMediaViewController: UIViewController {
             
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 }
