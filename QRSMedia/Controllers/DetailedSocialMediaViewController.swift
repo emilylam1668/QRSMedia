@@ -22,6 +22,7 @@ class DetailedSocialMediaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
         enterUsernameTextField.text = cellSocialMediaInfo.username
@@ -67,13 +68,17 @@ class DetailedSocialMediaViewController: UIViewController {
 //        username?.username = enterUsernameTextField.text
 //        CoreDataHelper.saveUsername()
         
+        let ud = UserDefaults.standard
         
         
-        
-        
-        
-        
-        
+        let key = cellSocialMediaInfo.companyTitle
+        if let value = enterUsernameTextField.text {
+            //save the value for the given key into user defaults
+            ud.set(value, forKey: key)
+            
+            ud.synchronize()
+
+        }
     }
     
     

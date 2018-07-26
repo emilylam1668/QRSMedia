@@ -26,6 +26,16 @@ class CompanyUserData {
     //var skype
     //var whatsapp
     
+    func loadFromUserDefaults() {
+        for item in allSocialMediaInfos {
+            let ud = UserDefaults.standard
+            let key = item.companyTitle
+            if let usernameSavedInUserDefaults = ud.string(forKey: key) {
+                item.username = usernameSavedInUserDefaults
+            }
+        }
+    }
+    
     var allSocialMediaInfos: [SocialMediaInfo] {
         return [snapchat, instagram, facebook, twitter, linkedin, wechat, spotify, discord]
     }

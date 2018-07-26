@@ -23,7 +23,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        companyUserData.loadFromUserDefaults()
 //        usernames = CoreDataHelper.retrieveUsernames()
         // Do any additional setup after loading the view, typically from a nib.
     }
