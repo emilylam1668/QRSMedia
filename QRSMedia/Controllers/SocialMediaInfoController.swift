@@ -18,6 +18,9 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
 //    var username: Username?
     
+    @IBAction func test(_ sender: UIButton) {
+        print("test")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -93,7 +93,8 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="0Bz-KH-VKZ" kind="show" identifier="displayQR" id="CNn-yF-liB"/>
+                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JW-lN-Dvk"/>
+                                    <segue destination="0Bz-KH-VKZ" kind="show" id="6x0-J4-GUU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -148,7 +149,11 @@
                         <viewLayoutGuide key="safeArea" id="Yy5-18-XPx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="BWZ-MV-i4o">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="wDe-nu-Nho"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="wDe-nu-Nho">
+                            <connections>
+                                <action selector="shareQRButtonTapped:" destination="0Bz-KH-VKZ" id="wfL-AU-aHD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEf-Nl-dWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,7 +229,7 @@
                     <viewLayoutGuide key="safeArea" id="nid-qg-vW5"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1937" y="369"/>
+            <point key="canvasLocation" x="1937" y="173"/>
         </scene>
         <!--Detailed Social Media View Controller-->
         <scene sceneID="ft4-x6-YoW">
@@ -286,7 +291,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hdm-pa-Bzv">
                             <color key="tintColor" name="tcHotPink"/>
                             <connections>
-                                <action selector="canelButtonTapped:" destination="Fs8-Il-gBb" id="Dxf-jc-kr1"/>
+                                <action selector="cancelButtonTapped:" destination="Fs8-Il-gBb" id="o6G-Lu-ZKE"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="mY6-Uw-tMX">
