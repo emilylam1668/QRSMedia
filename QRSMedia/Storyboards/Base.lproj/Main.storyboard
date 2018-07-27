@@ -125,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="-255.02248875562222"/>
         </scene>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="azW-Dc-06O">
             <objects>
                 <viewController id="0Bz-KH-VKZ" customClass="QRViewController" customModule="QRSMedia" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,7 +148,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yy5-18-XPx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="BWZ-MV-i4o">
+                    <navigationItem key="navigationItem" id="BWZ-MV-i4o">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="wDe-nu-Nho">
                             <connections>
                                 <action selector="shareQRButtonTapped:" destination="0Bz-KH-VKZ" id="wfL-AU-aHD"/>
@@ -156,19 +156,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="screenshotView" destination="ukh-eR-7eu" id="oVh-Dx-3uS"/>
                         <outlet property="tableView" destination="9kt-zr-mTm" id="gfL-vL-ePm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEf-Nl-dWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="ukh-eR-7eu">
-                    <rect key="frame" x="0.0" y="0.0" width="372" height="401"/>
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="494"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-zr-mTm">
-                            <rect key="frame" x="0.0" y="0.0" width="372" height="401"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9kt-zr-mTm" customClass="screenshotView">
+                            <rect key="frame" x="0.0" y="20" width="372" height="474"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <prototypes>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSCustomCell" id="Yyk-1G-bnI" customClass="SSCompanyDataCell">
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SSCustomCell" id="Yyk-1G-bnI" customClass="SSCompanyDataCell" customModule="QRSMedia" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="28" width="372" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yyk-1G-bnI" id="fHn-qT-Y5a">
@@ -214,12 +215,16 @@
                                     </tableViewCellContentView>
                                     <color key="backgroundColor" red="0.96953272739999996" green="0.97644562739999996" blue="0.99718432739999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <connections>
-                                        <outlet property="SScompanyName" destination="sOR-xL-YCn" id="Iex-wg-UwA"/>
+                                        <outlet property="SScompanyName" destination="sOR-xL-YCn" id="kP7-jU-ki7"/>
                                         <outlet property="SSlogoImageView" destination="1ZK-sC-FTb" id="8gM-8t-Lae"/>
                                         <outlet property="SSusernameLabel" destination="QHC-50-QpD" id="MPR-nY-xks"/>
                                     </connections>
                                 </tableViewCell>
                             </prototypes>
+                            <connections>
+                                <outlet property="dataSource" destination="0Bz-KH-VKZ" id="yjL-Sj-5sK"/>
+                                <outlet property="delegate" destination="0Bz-KH-VKZ" id="kjp-Qy-53X"/>
+                            </connections>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -232,7 +237,7 @@
                     <viewLayoutGuide key="safeArea" id="nid-qg-vW5"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1937" y="173"/>
+            <point key="canvasLocation" x="1982" y="406"/>
         </scene>
         <!--Detailed Social Media View Controller-->
         <scene sceneID="ft4-x6-YoW">
@@ -311,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rL4-CA-eW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="-709"/>
+            <point key="canvasLocation" x="1964" y="-877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6tH-hb-40E">
