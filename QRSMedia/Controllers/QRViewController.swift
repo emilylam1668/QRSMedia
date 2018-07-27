@@ -32,8 +32,10 @@ class QRViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         tableView.reloadData()
         //DID LOAD OR WILL APPEAR
-        //let screenshotImage = self.screenshotView.snapshotImage()
+        let screenshotImage = self.screenshotView.snapshotImage()
     }
+    
+    
     
     let companyUserData = CompanyUserData()
     
