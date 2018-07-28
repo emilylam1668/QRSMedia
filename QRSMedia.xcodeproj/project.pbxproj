@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D74B2067210BCC6900454BAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D74B2066210BCC6800454BAC /* GoogleService-Info.plist */; };
+		C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */; };
+		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
 		D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */; };
 		D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B7303B2105A3B500DDBAFD /* Main.storyboard */; };
@@ -23,7 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D74B2066210BCC6800454BAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia.release.xcconfig"; sourceTree = "<group>"; };
+		B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B730372105A3B500DDBAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoController.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfo.swift; sourceTree = "<group>"; };
 		D7B730762107C60400DDBAFD /* SSCompanyDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCompanyDataCell.swift; sourceTree = "<group>"; };
 		D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		E9FDCEAA39E15D21831E561B /* Pods-QRSMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51C02217ECCF7CF2B7E8902F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A7CEAE2EEF26F15A86227FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9FDCEAA39E15D21831E561B /* Pods-QRSMedia.debug.xcconfig */,
+				0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D7B7302B2105A3B500DDBAFD = {
 			isa = PBXGroup;
 			children = (
 				D7B730362105A3B500DDBAFD /* QRSMedia */,
 				D7B730352105A3B500DDBAFD /* Products */,
+				8A7CEAE2EEF26F15A86227FD /* Pods */,
+				51C02217ECCF7CF2B7E8902F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +102,8 @@
 				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
 				D7B730412105A3B700DDBAFD /* Assets.xcassets */,
 				D7B730462105A3B700DDBAFD /* Info.plist */,
+				D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */,
 				D7B7303E2105A3B500DDBAFD /* QRSMedia.xcdatamodeld */,
-				D74B2066210BCC6800454BAC /* GoogleService-Info.plist */,
 			);
 			path = QRSMedia;
 			sourceTree = "<group>";
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7B730492105A3B700DDBAFD /* Build configuration list for PBXNativeTarget "QRSMedia" */;
 			buildPhases = (
+				DC36462324729B7C7E056894 /* [CP] Check Pods Manifest.lock */,
 				D7B730302105A3B500DDBAFD /* Sources */,
 				D7B730312105A3B500DDBAFD /* Frameworks */,
 				D7B730322105A3B500DDBAFD /* Resources */,
+				1B2442C519BE08EC875FE5F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,13 +197,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */,
-				D74B2067210BCC6900454BAC /* GoogleService-Info.plist in Resources */,
+				D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */,
 				D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */,
 				D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2442C519BE08EC875FE5F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC36462324729B7C7E056894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QRSMedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7B730302105A3B500DDBAFD /* Sources */ = {
@@ -334,6 +401,7 @@
 		};
 		D7B7304A2105A3B700DDBAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FDCEAA39E15D21831E561B /* Pods-QRSMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -352,6 +420,7 @@
 		};
 		D7B7304B2105A3B700DDBAFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
