@@ -38,13 +38,13 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSL-hS-91I">
                                                             <rect key="frame" x="0.0" y="0.0" width="121.5" height="62.5"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                             <color key="textColor" red="0.20604010540000001" green="0.29718159529999999" blue="0.36412419509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCm-6B-FDi">
                                                             <rect key="frame" x="121.5" y="0.0" width="121.5" height="62.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                             <color key="textColor" red="0.20604010540000001" green="0.29718159529999999" blue="0.36412419509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -61,7 +61,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.9815853886" green="0.99967890979999996" blue="0.98277927750000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" red="0.96442420179999999" green="0.96562797310000004" blue="0.97307265229999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="yQr-xh-l0C" firstAttribute="top" secondItem="c4t-vM-hBI" secondAttribute="top" constant="16" id="8Ew-F3-fk7"/>
                                                 <constraint firstItem="tXU-WE-NoY" firstAttribute="leading" secondItem="c4t-vM-hBI" secondAttribute="leading" constant="16" id="BdV-Os-UZ1"/>
@@ -92,7 +92,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Ff9-5c-uT6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                 <state key="normal" title="Create QR Code">
                                     <color key="titleColor" red="0.41331569689999997" green="0.51920338489999995" blue="0.60790182579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -191,13 +191,13 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSCompany Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOR-xL-YCn">
                                                         <rect key="frame" x="0.0" y="0.0" width="136.5" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSUsername Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHC-50-QpD">
                                                         <rect key="frame" x="136.5" y="0.0" width="136" height="18"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -268,26 +268,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ih7-aB-SCx">
-                                <rect key="frame" x="20" y="479" width="335" height="58"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <rect key="frame" x="20" y="469" width="335" height="68"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
                                 <color key="textColor" red="0.20604010540000001" green="0.29718159529999999" blue="0.36412419509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Username/Link" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pO-4B-eMn">
                                 <rect key="frame" x="20" y="537" width="335" height="15"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <color key="textColor" red="0.68314221379999995" green="0.74606253320000004" blue="0.70879516590000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98446424688052836" green="0.99967890979999996" blue="0.99205918288640493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.96442420179999999" green="0.96562797310000004" blue="0.97307265229999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="PwH-wb-SgR" secondAttribute="trailing" constant="20" id="6VA-UJ-lfv"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="Ih7-aB-SCx" secondAttribute="trailing" constant="20" id="6e3-xW-v9b"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" constant="30" id="DLu-3y-dY2"/>
                             <constraint firstItem="4pO-4B-eMn" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" id="Iel-me-N8F"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="4pO-4B-eMn" secondAttribute="trailing" constant="20" id="VPo-f5-me6"/>
-                            <constraint firstItem="Ih7-aB-SCx" firstAttribute="top" secondItem="PwH-wb-SgR" secondAttribute="bottom" constant="30" id="YAb-rr-I4P"/>
+                            <constraint firstItem="Ih7-aB-SCx" firstAttribute="top" secondItem="PwH-wb-SgR" secondAttribute="bottom" constant="20" id="YAb-rr-I4P"/>
                             <constraint firstItem="PwH-wb-SgR" firstAttribute="top" secondItem="oCR-fX-yot" secondAttribute="top" constant="50" id="ZZx-ZM-PiG"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="hWr-f5-Aw7"/>
                             <constraint firstItem="Ih7-aB-SCx" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="kaO-xj-DtV"/>
