@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */; };
 		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
+		D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08C210ED0A800FDB394 /* StorageService.swift */; };
+		D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */; };
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
 		D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */; };
 		D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B7303B2105A3B500DDBAFD /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia.release.xcconfig"; sourceTree = "<group>"; };
 		B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D73EF08C210ED0A800FDB394 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotService.swift; sourceTree = "<group>"; };
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B730372105A3B500DDBAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D73EF08B210ED02200FDB394 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
+				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
+				D73EF08C210ED0A800FDB394 /* StorageService.swift */,
+				D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D7B7302B2105A3B500DDBAFD = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				D7B730372105A3B500DDBAFD /* AppDelegate.swift */,
+				D73EF08B210ED02200FDB394 /* Models */,
 				D7B7307A210917C100DDBAFD /* Controllers */,
 				D7B7307D2109187300DDBAFD /* Storyboards */,
 				D7B7307B2109180F00DDBAFD /* Custom Cells */,
-				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
-				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
 				D7B730412105A3B700DDBAFD /* Assets.xcassets */,
 				D7B730462105A3B700DDBAFD /* Info.plist */,
 				D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */,
@@ -256,10 +270,12 @@
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
 				D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
+				D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */,
 				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
 				D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */,
+				D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
