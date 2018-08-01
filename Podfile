@@ -6,7 +6,11 @@ target 'QRSMedia' do
   use_frameworks!
 
   # Pods for QRSMedia
-pod 'Firebase/Core'
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
+	pod 'FirebaseUI/Auth'
+	pod 'Firebase/Database'
+	pod 'Firebase/Storage'
 
 # new pods go under here
 

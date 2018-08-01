@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC840AF1B9AFB7DAABA44F25E8BDBC33"
+               BlueprintIdentifier = "1736970BFAD255A431A2B2C2A85F4C81"
                BuildableName = "Pods_QRSMedia.framework"
                BlueprintName = "Pods-QRSMedia"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC840AF1B9AFB7DAABA44F25E8BDBC33"
+            BlueprintIdentifier = "1736970BFAD255A431A2B2C2A85F4C81"
             BuildableName = "Pods_QRSMedia.framework"
             BlueprintName = "Pods-QRSMedia"
             ReferencedContainer = "container:Pods.xcodeproj">

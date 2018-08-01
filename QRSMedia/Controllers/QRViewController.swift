@@ -32,7 +32,10 @@ class QRViewController: UIViewController, UITableViewDataSource {
         super.viewWillAppear(animated)
         tableView.reloadData()
         //DID LOAD OR WILL APPEAR
-        let screenshotmage = self.screenshotView.snapshotImage()
+        let screenshotImage = self.screenshotView.snapshotImage()
+        MediaService.create(for: screenshotImage) { (urlOfImage) in
+            <#code#>
+        }
     }
     
     

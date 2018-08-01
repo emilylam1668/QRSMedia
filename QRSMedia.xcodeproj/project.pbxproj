@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */; };
+		D713FF2E211251040034A410 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713FF2D211251040034A410 /* Login.storyboard */; };
+		D713FF30211252850034A410 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF2F211252850034A410 /* LoginViewController.swift */; };
+		D713FF33211260530034A410 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF32211260530034A410 /* StorageService.swift */; };
+		D713FF35211260930034A410 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF34211260930034A410 /* MediaService.swift */; };
 		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
 		D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08C210ED0A800FDB394 /* StorageService.swift */; };
 		D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */; };
@@ -28,6 +32,10 @@
 /* Begin PBXFileReference section */
 		0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia.release.xcconfig"; sourceTree = "<group>"; };
 		B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D713FF2D211251040034A410 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D713FF2F211252850034A410 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D713FF32211260530034A410 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		D713FF34211260930034A410 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D73EF08C210ED0A800FDB394 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotService.swift; sourceTree = "<group>"; };
@@ -77,6 +85,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D713FF31211260440034A410 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D713FF32211260530034A410 /* StorageService.swift */,
+				D713FF34211260930034A410 /* MediaService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		D73EF08B210ED02200FDB394 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +126,7 @@
 		D7B730362105A3B500DDBAFD /* QRSMedia */ = {
 			isa = PBXGroup;
 			children = (
+				D713FF31211260440034A410 /* Services */,
 				D7B730372105A3B500DDBAFD /* AppDelegate.swift */,
 				D73EF08B210ED02200FDB394 /* Models */,
 				D7B7307A210917C100DDBAFD /* Controllers */,
@@ -128,6 +146,7 @@
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
 				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
+				D713FF2F211252850034A410 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +165,7 @@
 			children = (
 				D7B7303B2105A3B500DDBAFD /* Main.storyboard */,
 				D7B730432105A3B700DDBAFD /* LaunchScreen.storyboard */,
+				D713FF2D211251040034A410 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 				D7B730312105A3B500DDBAFD /* Frameworks */,
 				D7B730322105A3B500DDBAFD /* Resources */,
 				1B2442C519BE08EC875FE5F8 /* [CP] Embed Pods Frameworks */,
+				3DA9682925F05CB32CBDC166 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +234,7 @@
 				D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */,
 				D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */,
 				D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */,
+				D713FF2E211251040034A410 /* Login.storyboard in Resources */,
 				D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,17 +249,39 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DA9682925F05CB32CBDC166 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC36462324729B7C7E056894 /* [CP] Check Pods Manifest.lock */ = {
@@ -265,12 +309,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D713FF30211252850034A410 /* LoginViewController.swift in Sources */,
 				D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */,
+				D713FF35211260930034A410 /* MediaService.swift in Sources */,
 				D7B730772107C60400DDBAFD /* SSCompanyDataCell.swift in Sources */,
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
 				D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
 				D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */,
+				D713FF33211260530034A410 /* StorageService.swift in Sources */,
 				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
