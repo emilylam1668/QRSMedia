@@ -34,7 +34,7 @@ class QRViewController: UIViewController, UITableViewDataSource {
         //DID LOAD OR WILL APPEAR
         let screenshotImage = self.screenshotView.snapshotImage()
         MediaService.create(for: screenshotImage) { (urlOfImage) in
-            <#code#>
+            
         }
     }
     

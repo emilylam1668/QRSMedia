@@ -13,7 +13,6 @@
 		D713FF33211260530034A410 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF32211260530034A410 /* StorageService.swift */; };
 		D713FF35211260930034A410 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF34211260930034A410 /* MediaService.swift */; };
 		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
-		D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08C210ED0A800FDB394 /* StorageService.swift */; };
 		D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */; };
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
 		D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */; };
@@ -37,7 +36,6 @@
 		D713FF32211260530034A410 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D713FF34211260930034A410 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D73EF08C210ED0A800FDB394 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotService.swift; sourceTree = "<group>"; };
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B730372105A3B500DDBAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
 				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
-				D73EF08C210ED0A800FDB394 /* StorageService.swift */,
 				D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */,
 			);
 			path = Models;
@@ -126,8 +123,8 @@
 		D7B730362105A3B500DDBAFD /* QRSMedia */ = {
 			isa = PBXGroup;
 			children = (
-				D713FF31211260440034A410 /* Services */,
 				D7B730372105A3B500DDBAFD /* AppDelegate.swift */,
+				D713FF31211260440034A410 /* Services */,
 				D73EF08B210ED02200FDB394 /* Models */,
 				D7B7307A210917C100DDBAFD /* Controllers */,
 				D7B7307D2109187300DDBAFD /* Storyboards */,
@@ -316,7 +313,6 @@
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
 				D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
-				D73EF08D210ED0A800FDB394 /* StorageService.swift in Sources */,
 				D713FF33211260530034A410 /* StorageService.swift in Sources */,
 				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,
