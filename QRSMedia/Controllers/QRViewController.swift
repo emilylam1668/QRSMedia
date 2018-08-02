@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QRCode
 
 extension UIView {
     
@@ -21,6 +22,7 @@ extension UIView {
 }
 
 class QRViewController: UIViewController, UITableViewDataSource {
+    @IBOutlet weak var qrCodeDisplay: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +32,16 @@ class QRViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+       
         //DID LOAD OR WILL APPEAR
         let screenshotImage = self.screenshotView.snapshotImage()
+        
         MediaService.create(for: screenshotImage) { (urlOfImage) in
             
+            let qrCode = QRCode(urlOfImage)
+         
+            self.qrCodeDisplay.image = qrCode?.image
+            self.tableView.reloadData()
         }
     }
     

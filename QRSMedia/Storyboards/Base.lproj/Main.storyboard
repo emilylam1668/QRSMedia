@@ -160,6 +160,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="qrCodeDisplay" destination="uvL-gf-ibE" id="WS8-jY-nzd"/>
                         <outlet property="screenshotView" destination="ukh-eR-7eu" id="oVh-Dx-3uS"/>
                         <outlet property="tableView" destination="9kt-zr-mTm" id="gfL-vL-ePm"/>
                     </connections>

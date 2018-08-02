@@ -12,7 +12,7 @@ import FirebaseStorage
 import FirebaseDatabase
 
 struct MediaService {
-    static func create(for image: UIImage, completion: (URL) -> ()) {
+    static func create(for image: UIImage, completion: @escaping (URL) -> ()) {
         guard let deviceId = UIDevice.current.identifierForVendor?.uuidString else {
             fatalError("no id found")
         }
@@ -25,6 +25,7 @@ struct MediaService {
             
             let urlString = downloadURL.absoluteString
             print("image url: \(urlString)")
+            completion(downloadURL)
         }
     }
 }

@@ -49,7 +49,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CompanyDataCell
-
+        
         let socialMediaInfo = companyUserData.allSocialMediaInfos[indexPath.row]
         
         cell.companyName.text = socialMediaInfo.companyTitle
@@ -60,10 +60,52 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     }
     
     
+    
+    
+//    let bgColors = [UIColor.blackColor, UIColor.grayColor, UIColor.whiteColor];
+//    let bgColor = companyUserData[indexPath.row]
+//    cell.contentView.backgroundColor = bgColor
+    
+//    var cellColors = ["F28044","F0A761","FEC362","F0BB4C","E3CB92","FEA375"]
+//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+//        cell.contentView.backgroundColor = UIColor(hexString: cellColors[indexPath.row % cellColors.count])
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//    func colorForIndex(index: Int) -> UIColor {
+//        let itemCount = companyUserData.allSocialMediaInfos.count - 1
+//        let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
+//        return UIColor(red: 1.0, green: color, blue: 0.0, alpha: 1.0)
+//    }
+//
+//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+//                            forRowAtIndexPath indexPath: NSIndexPath) {
+//        cell.backgroundColor = colorForIndex(index: indexPath.row)
+//    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func appInstructionsDidTap(_ sender: Any) {
-        let alertAppInstructions = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
+        let alertAppInstructions = UIAlertController(title: "How to generate QR code", message: "message", preferredStyle: .alert)
         let dismissButton = UIAlertAction(title: "Dismiss", style: .default)
         alertAppInstructions.addAction(dismissButton)
         

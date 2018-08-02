@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */; };
-		D713FF2E211251040034A410 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713FF2D211251040034A410 /* Login.storyboard */; };
-		D713FF30211252850034A410 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF2F211252850034A410 /* LoginViewController.swift */; };
 		D713FF33211260530034A410 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF32211260530034A410 /* StorageService.swift */; };
 		D713FF35211260930034A410 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF34211260930034A410 /* MediaService.swift */; };
 		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
@@ -31,8 +29,6 @@
 /* Begin PBXFileReference section */
 		0D8D9AA135D8C1427E9A8B36 /* Pods-QRSMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRSMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRSMedia/Pods-QRSMedia.release.xcconfig"; sourceTree = "<group>"; };
 		B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D713FF2D211251040034A410 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		D713FF2F211252850034A410 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D713FF32211260530034A410 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D713FF34211260930034A410 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -143,7 +139,6 @@
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
 				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
-				D713FF2F211252850034A410 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,7 +157,6 @@
 			children = (
 				D7B7303B2105A3B500DDBAFD /* Main.storyboard */,
 				D7B730432105A3B700DDBAFD /* LaunchScreen.storyboard */,
-				D713FF2D211251040034A410 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,7 +225,6 @@
 				D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */,
 				D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */,
 				D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */,
-				D713FF2E211251040034A410 /* Login.storyboard in Resources */,
 				D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D713FF30211252850034A410 /* LoginViewController.swift in Sources */,
 				D7B730402105A3B500DDBAFD /* QRSMedia.xcdatamodeld in Sources */,
 				D713FF35211260930034A410 /* MediaService.swift in Sources */,
 				D7B730772107C60400DDBAFD /* SSCompanyDataCell.swift in Sources */,
