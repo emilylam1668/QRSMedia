@@ -11,6 +11,7 @@ target 'QRSMedia' do
 	pod 'FirebaseUI/Auth'
 	pod 'Firebase/Database'
 	pod 'Firebase/Storage'
+	pod "QRCode"
 
 # new pods go under here
 
