@@ -55,6 +55,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         cell.companyName.text = socialMediaInfo.companyTitle
         cell.logoImageView.image = socialMediaInfo.image
         cell.usernameLabel.text = socialMediaInfo.username
+        cell.contentView.backgroundColor = colorForIndex(index: indexPath.row)
         
         return cell
     }
@@ -79,16 +80,16 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
     
     
-//    func colorForIndex(index: Int) -> UIColor {
-//        let itemCount = companyUserData.allSocialMediaInfos.count - 1
-//        let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
-//        return UIColor(red: 1.0, green: color, blue: 0.0, alpha: 1.0)
-//    }
-//
-//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
-//                            forRowAtIndexPath indexPath: NSIndexPath) {
-//        cell.backgroundColor = colorForIndex(index: indexPath.row)
-//    }
+    func colorForIndex(index: Int) -> UIColor {
+        let itemCount = companyUserData.allSocialMediaInfos.count - 1
+        let color = (CGFloat(index) / CGFloat(itemCount)) * 0.9
+        return UIColor(red: color, green: 0.2, blue: 0.5, alpha: 0.6)
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+                            forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = colorForIndex(index: indexPath.row)
+    }
     
     
     
