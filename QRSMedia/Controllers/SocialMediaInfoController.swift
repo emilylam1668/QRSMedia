@@ -60,48 +60,17 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    
-    
-    
-//    let bgColors = [UIColor.blackColor, UIColor.grayColor, UIColor.whiteColor];
-//    let bgColor = companyUserData[indexPath.row]
-//    cell.contentView.backgroundColor = bgColor
-    
-//    var cellColors = ["F28044","F0A761","FEC362","F0BB4C","E3CB92","FEA375"]
-//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-//        cell.contentView.backgroundColor = UIColor(hexString: cellColors[indexPath.row % cellColors.count])
-//    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+//Creates the color functions for cells background
     func colorForIndex(index: Int) -> UIColor {
         let itemCount = companyUserData.allSocialMediaInfos.count - 1
         let color = (CGFloat(index) / CGFloat(itemCount)) * 0.9
         return UIColor(red: color, green: 0.2, blue: 0.5, alpha: 0.6)
     }
-
+//Sets the cell's background color
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
                             forRowAtIndexPath indexPath: NSIndexPath) {
         cell.backgroundColor = colorForIndex(index: indexPath.row)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     @IBOutlet weak var tableView: UITableView!
     

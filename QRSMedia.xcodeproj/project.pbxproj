@@ -137,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
-				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
+				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
