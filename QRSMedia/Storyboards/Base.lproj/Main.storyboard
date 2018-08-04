@@ -257,6 +257,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tY1-XQ-piM" userLabel="gradientVew">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PwH-wb-SgR">
                                 <rect key="frame" x="20" y="50" width="335" height="335"/>
                                 <constraints>
@@ -286,21 +290,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.96442420179999999" green="0.96562797310000004" blue="0.97307265229999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.53374449956608272" green="0.67946768625470033" blue="0.7952490482233503" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="PwH-wb-SgR" secondAttribute="trailing" constant="20" id="6VA-UJ-lfv"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="Ih7-aB-SCx" secondAttribute="trailing" constant="20" id="6e3-xW-v9b"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" constant="30" id="DLu-3y-dY2"/>
+                            <constraint firstItem="tY1-XQ-piM" firstAttribute="leading" secondItem="zZo-HC-3Wd" secondAttribute="leading" id="G39-4X-ef3"/>
                             <constraint firstItem="4pO-4B-eMn" firstAttribute="top" secondItem="Ih7-aB-SCx" secondAttribute="bottom" id="Iel-me-N8F"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="4pO-4B-eMn" secondAttribute="trailing" constant="20" id="VPo-f5-me6"/>
                             <constraint firstItem="Ih7-aB-SCx" firstAttribute="top" secondItem="PwH-wb-SgR" secondAttribute="bottom" constant="20" id="YAb-rr-I4P"/>
+                            <constraint firstItem="oCR-fX-yot" firstAttribute="bottom" secondItem="tY1-XQ-piM" secondAttribute="bottom" id="Ywe-pd-AFN"/>
                             <constraint firstItem="PwH-wb-SgR" firstAttribute="top" secondItem="oCR-fX-yot" secondAttribute="top" constant="50" id="ZZx-ZM-PiG"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="hWr-f5-Aw7"/>
                             <constraint firstItem="Ih7-aB-SCx" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="kaO-xj-DtV"/>
                             <constraint firstItem="4pO-4B-eMn" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="qPa-e0-rGD"/>
+                            <constraint firstItem="tY1-XQ-piM" firstAttribute="top" secondItem="oCR-fX-yot" secondAttribute="top" id="qTL-tQ-RhX"/>
                             <constraint firstItem="CBe-hc-klP" firstAttribute="top" secondItem="4pO-4B-eMn" secondAttribute="bottom" constant="15" id="roa-6G-au5"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="bottom" secondItem="CBe-hc-klP" secondAttribute="bottom" constant="50" id="wmc-gQ-5H8"/>
                             <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="CBe-hc-klP" secondAttribute="trailing" constant="20" id="wo0-Af-0cB"/>
+                            <constraint firstItem="oCR-fX-yot" firstAttribute="trailing" secondItem="tY1-XQ-piM" secondAttribute="trailing" id="yJL-3Q-4Gj"/>
                             <constraint firstItem="PwH-wb-SgR" firstAttribute="leading" secondItem="oCR-fX-yot" secondAttribute="leading" constant="20" id="zh5-qV-SDi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oCR-fX-yot"/>
@@ -322,11 +330,12 @@
                         <outlet property="companyLogoImageView" destination="PwH-wb-SgR" id="tYU-zA-gwV"/>
                         <outlet property="companyNameLabel" destination="Ih7-aB-SCx" id="dl0-YK-boD"/>
                         <outlet property="enterUsernameTextField" destination="CBe-hc-klP" id="Rfg-U5-jF4"/>
+                        <outlet property="gradientView" destination="tY1-XQ-piM" id="w1S-iq-USv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rL4-CA-eW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1964" y="-877"/>
+            <point key="canvasLocation" x="1964" y="-877.51124437781118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6tH-hb-40E">

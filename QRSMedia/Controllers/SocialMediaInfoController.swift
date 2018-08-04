@@ -10,21 +10,12 @@ import UIKit
 
 class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
-//    var usernames = [Username] () {
-//        didSet {
-//            tableView.reloadData()
-//        }
-//    }
-    
-//    var username: Username?
-    
     @IBAction func test(_ sender: UIButton) {
         print("test")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         companyUserData.loadFromUserDefaults()
-//        usernames = CoreDataHelper.retrieveUsernames()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -63,6 +54,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
 //Creates the color functions for cells background
     func colorForIndex(index: Int) -> UIColor {
         let itemCount = companyUserData.allSocialMediaInfos.count - 1
+        print(itemCount)
         let color = (CGFloat(index) / CGFloat(itemCount)) * 0.9
         return UIColor(red: color, green: 0.2, blue: 0.5, alpha: 0.6)
     }

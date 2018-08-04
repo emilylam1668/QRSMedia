@@ -11,6 +11,9 @@ import UIKit
 
 class DetailedSocialMediaViewController: UIViewController {
 
+    var gradientLayer: CAGradientLayer!
+    
+    @IBOutlet weak var gradientView: UIView!
     // MARK: - IBOutlets
     @IBOutlet weak var companyLogoImageView: UIImageView!
     @IBOutlet weak var companyNameLabel: UILabel!
@@ -22,7 +25,24 @@ class DetailedSocialMediaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        
+        
+        
+//        createGradientLayer()
+        //gradientView.backgroundColor = UIColord
+//        self.view.layer.addSublayer(gradient)
+        
 
+        
+        
+        
+        
+        
+        
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
         enterUsernameTextField.text = cellSocialMediaInfo.username
@@ -33,11 +53,28 @@ class DetailedSocialMediaViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
 
     }
-    //code to dismiss function in swift 1
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.view.endEditing(true)
-//        return false
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        createGradientLayer()
 //    }
+    
+    //code to dismiss function in swift 1
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func createGradientLayer() {
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        
+        let pink = UIColor(red: 188/255.0, green: 100/255.0, blue: 146/255.0, alpha: 1)
+        let blue = UIColor(red: 94/255.0, green: 122/255.0, blue: 168/255.0, alpha: 1)
+        
+        gradientLayer.colors = [blue.cgColor, pink.cgColor]
+        self.view.layer.addSublayer(gradientLayer)
+    }
 
     @IBAction func cancelButtonTapped(_ sender: Any) {
 
