@@ -10,6 +10,7 @@
 		C4986DCA58BDEAD40371ACAF /* Pods_QRSMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */; };
 		D713FF33211260530034A410 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF32211260530034A410 /* StorageService.swift */; };
 		D713FF35211260930034A410 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF34211260930034A410 /* MediaService.swift */; };
+		D713FF772117AC200034A410 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF762117AC200034A410 /* LoginViewController.swift */; };
 		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
 		D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */; };
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		B2DF1D0913CDC2D55DAFD459 /* Pods_QRSMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRSMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D713FF32211260530034A410 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D713FF34211260930034A410 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		D713FF762117AC200034A410 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotService.swift; sourceTree = "<group>"; };
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */,
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
 				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
+				D713FF762117AC200034A410 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
 				D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */,
+				D713FF772117AC200034A410 /* LoginViewController.swift in Sources */,
 				D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

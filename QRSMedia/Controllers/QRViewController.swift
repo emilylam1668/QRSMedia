@@ -45,8 +45,6 @@ class QRViewController: UIViewController, UITableViewDataSource {
         }
     }
     
-    
-    
     let companyUserData = CompanyUserData()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
