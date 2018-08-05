@@ -25,24 +25,11 @@ class DetailedSocialMediaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
-        
-        
+
 //        createGradientLayer()
         //gradientView.backgroundColor = UIColord
 //        self.view.layer.addSublayer(gradient)
-        
-
-        
-        
-        
-        
-        
-        
+    
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
         enterUsernameTextField.text = cellSocialMediaInfo.username
@@ -138,7 +125,6 @@ class DetailedSocialMediaViewController: UIViewController {
                 view.frame.origin.y = -keyboardRect.height
         } else {
             view.frame.origin.y = 0
-
         }
     }
 }
