@@ -115,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="edt-bu-w9X">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="hFI-Vb-NP7"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-info" id="OXJ-kG-Qlc">
                             <connections>
                                 <action selector="appInstructionsDidTap:" destination="BYZ-38-t0r" id="6AF-Hy-TmC"/>
@@ -346,6 +347,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysT-ra-4WJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="VJG-Sb-FQ6">
                                 <rect key="frame" x="64" y="110" width="247" height="447"/>
                                 <subviews>
@@ -407,9 +412,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="y4x-5d-KeV" firstAttribute="bottom" secondItem="ysT-ra-4WJ" secondAttribute="bottom" id="2bC-6n-dmZ"/>
+                            <constraint firstItem="y4x-5d-KeV" firstAttribute="trailing" secondItem="ysT-ra-4WJ" secondAttribute="trailing" id="3NW-dF-KbK"/>
                             <constraint firstItem="VJG-Sb-FQ6" firstAttribute="centerY" secondItem="WtZ-Zb-srz" secondAttribute="centerY" id="7zl-Ca-Qwa"/>
+                            <constraint firstItem="ysT-ra-4WJ" firstAttribute="top" secondItem="WtZ-Zb-srz" secondAttribute="top" id="cAz-1N-eQV"/>
                             <constraint firstItem="VJG-Sb-FQ6" firstAttribute="leading" secondItem="y4x-5d-KeV" secondAttribute="leading" constant="64" id="fJ0-me-Evg"/>
                             <constraint firstItem="y4x-5d-KeV" firstAttribute="trailing" secondItem="VJG-Sb-FQ6" secondAttribute="trailing" constant="64" id="fXe-7B-ly8"/>
+                            <constraint firstItem="ysT-ra-4WJ" firstAttribute="leading" secondItem="y4x-5d-KeV" secondAttribute="leading" id="zfN-y2-2hM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y4x-5d-KeV"/>
                     </view>
@@ -417,12 +426,13 @@
                     <connections>
                         <outlet property="QRSMLogoImage" destination="CRh-Mb-bjN" id="fcM-Op-l4p"/>
                         <outlet property="doneButton" destination="3GI-Ks-lEc" id="jJy-Wq-VgE"/>
+                        <outlet property="gradientView" destination="ysT-ra-4WJ" id="yqU-sY-a2G"/>
                         <outlet property="insturctionsButton" destination="p4i-19-WP4" id="BDq-wb-OyY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpU-0J-ix5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="491"/>
+            <point key="canvasLocation" x="1152.8" y="490.70464767616198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6tH-hb-40E">
