@@ -22,10 +22,15 @@ extension UIView {
 }
 
 class QRViewController: UIViewController, UITableViewDataSource {
+    
+    var gradientLayer: CAGradientLayer!
+
     @IBOutlet weak var qrCodeDisplay: UIImageView!
+    @IBOutlet weak var gradientView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        createGradientLayer()
         companyUserData.loadFromUserDefaults()
 
     }
@@ -43,6 +48,17 @@ class QRViewController: UIViewController, UITableViewDataSource {
             self.qrCodeDisplay.image = qrCode?.image
             self.tableView.reloadData()
         }
+    }
+    
+    func createGradientLayer() {
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        
+        let pink = UIColor(red: 188/255.0, green: 100/255.0, blue: 146/255.0, alpha: 1)
+        let blue = UIColor(red: 94/255.0, green: 122/255.0, blue: 168/255.0, alpha: 1)
+        
+        gradientLayer.colors = [blue.cgColor, pink.cgColor]
+        gradientView.layer.addSublayer(gradientLayer)
     }
     
     let companyUserData = CompanyUserData()
@@ -64,7 +80,7 @@ class QRViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-    
+
     //Creates the color functions for cells background
     func colorForIndex(index: Int) -> UIColor {
         let itemCount = companyUserData.allSocialMediaInfos.count - 1
@@ -77,20 +93,29 @@ class QRViewController: UIViewController, UITableViewDataSource {
         cell.backgroundColor = colorForIndex(index: indexPath.row)
     }
     
+    @IBAction func saveImageButtonTapped(_ sender: Any) {
+//        qrCodeDisplay
+        guard
+            let image = self.qrCodeDisplay.image,
+            let imageData = UIImagePNGRepresentation(image),
+            let compressedImage = UIImage(data: imageData)
+            else {
+                return
+        }
+        
+        UIImageWriteToSavedPhotosAlbum(compressedImage, self, #selector(QRViewController.image(image:didFinishSavingWithError:contextInfo:)), nil)
+    }
+//    - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo;
+    @objc func image(image: UIImage, didFinishSavingWithError: Error, contextInfo: Any?) {
+        
+        let alert = UIAlertController(title: "Saved", message: "Your QR Code has been saved to your camera roll", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     @IBOutlet var screenshotView: UIView!
     @IBOutlet weak var tableView: UITableView!
-
-    @IBAction func shareQRButtonTapped(_ sender: Any) {
-        
-        let alertSaveQR = UIAlertController(title: "", message: "", preferredStyle: .actionSheet)
-//        let alertSaveQR = UIAlertController(title: "", message: "", preferredStyle: )
-        let saveImage = UIAlertAction(title: "Save Image", style: .default)
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
-        
-        alertSaveQR.addAction(saveImage)
-        alertSaveQR.addAction(cancel)
-        
-        self.present(alertSaveQR, animated: true)
-    }
     
 }

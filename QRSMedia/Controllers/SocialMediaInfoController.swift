@@ -13,6 +13,9 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     @IBAction func test(_ sender: UIButton) {
         print("test")
     }
+    
+    var cellSocialMediaInfo: SocialMediaInfo!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         companyUserData.loadFromUserDefaults()
@@ -21,14 +24,13 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //check if user has already openpd app
+        //check if user has already opened app
         
         let ud = UserDefaults.standard
         if ud.bool(forKey: "hasUserAlreadyOpendAppBefore") == false {
@@ -63,6 +65,22 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    @IBAction func clearButtonTapped(_ sender: Any) {
+        let areYouSure = UIAlertController(title: "Are you sure?", message: "All usernames will be cleared", preferredStyle: .actionSheet)
+        let cancel = UIAlertAction(title: "Cancel", style: .default) { (_) in
+            
+        }
+                
+        let keepGoing = UIAlertAction(title: "Continue", style: .default) { (_) in
+            self.companyUserData.resetUsernameValues()
+            self.tableView.reloadData()
+        }
+        areYouSure.addAction(cancel)
+        areYouSure.addAction(keepGoing)
+        
+        self.present(areYouSure, animated: true)
+    }
+    
 //Creates the color functions for cells background
     func colorForIndex(index: Int) -> UIColor {
         let itemCount = companyUserData.allSocialMediaInfos.count - 1
@@ -84,7 +102,6 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         alertAppInstructions.addAction(dismissButton)
         
         self.present(alertAppInstructions, animated: true)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

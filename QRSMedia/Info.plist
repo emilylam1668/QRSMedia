@@ -41,5 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save the QR code to the user&apos;s photo album</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Save the QR code to the user</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Save the QR code to the user&apos;s photo album</string>
 </dict>
 </plist>

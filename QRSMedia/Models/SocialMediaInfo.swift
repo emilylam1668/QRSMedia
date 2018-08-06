@@ -35,6 +35,16 @@ class CompanyUserData {
         }
     }
     
+    func resetUsernameValues() {
+        let ud = UserDefaults.standard
+        
+        for aCompany in self.allSocialMediaInfos {
+            ud.set(nil, forKey: aCompany.companyTitle)
+            aCompany.username = ""
+        }
+        ud.synchronize()
+    }
+    
     var allSocialMediaInfos: [SocialMediaInfo] {
         return [snapchat, instagram, facebook, twitter, linkedin, wechat, spotify, discord, weibo, youtube, tumblr, skype, whatsapp]
     }

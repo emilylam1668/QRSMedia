@@ -64,20 +64,24 @@ class DetailedSocialMediaViewController: UIViewController {
     }
 
     @IBAction func cancelButtonTapped(_ sender: Any) {
-
-        let alertLeavePage = UIAlertController(title: "Are you sure?", message: "If you go back now, your username changes won't be saved.", preferredStyle: .actionSheet)
-        let discardChanges = UIAlertAction(title: "Discard Changes", style: .destructive, handler: { action in
-            popVC()
-        })
-        let stayOnPage = UIAlertAction(title: "Cancel", style: .cancel)
-
-        alertLeavePage.addAction(discardChanges)
-        alertLeavePage.addAction(stayOnPage)
-
-        self.present(alertLeavePage, animated: true)
-
-        func popVC() {
+        if enterUsernameTextField.text == cellSocialMediaInfo.username {
             navigationController!.popViewController(animated: true)
+        }
+        else {
+            let alertLeavePage = UIAlertController(title: "Are you sure?", message: "If you go back now, your username changes won't be saved.", preferredStyle: .actionSheet)
+            let discardChanges = UIAlertAction(title: "Discard Changes", style: .destructive, handler: { action in
+                popVC()
+            })
+            let stayOnPage = UIAlertAction(title: "Cancel", style: .cancel)
+
+            alertLeavePage.addAction(discardChanges)
+            alertLeavePage.addAction(stayOnPage)
+
+            self.present(alertLeavePage, animated: true)
+
+            func popVC() {
+                navigationController!.popViewController(animated: true)
+            }
         }
     }
 
@@ -88,9 +92,6 @@ class DetailedSocialMediaViewController: UIViewController {
 
         //go back to the Home screen
         navigationController!.popViewController(animated: true)
-
-//        username?.username = enterUsernameTextField.text
-//        CoreDataHelper.saveUsername()
 
         let ud = UserDefaults.standard
 
@@ -104,7 +105,6 @@ class DetailedSocialMediaViewController: UIViewController {
         }
     }
     
-
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
