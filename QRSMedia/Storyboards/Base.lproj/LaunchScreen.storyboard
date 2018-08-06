@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +18,19 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrsmgradient" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-Pc-wF5">
+                                <rect key="frame" x="-82.5" y="73.5" width="540" height="540"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KXo-Pc-wF5" secondAttribute="height" multiplier="1:1" id="Pkz-D0-Rg2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.41960784313725491" green="0.49803921568627452" blue="0.65490196078431373" alpha="0.55792487157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0G3-w1-4bf"/>
+                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UQP-bE-rgf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -26,4 +39,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="qrsmgradient" width="540" height="540"/>
+    </resources>
 </document>
