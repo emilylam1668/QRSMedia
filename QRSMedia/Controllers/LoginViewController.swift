@@ -11,7 +11,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var createButton: UIButton!
+    @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var insturctionsButton: UIButton!
     @IBOutlet weak var QRSMLogoImage: UIImageView!
     
@@ -20,7 +20,8 @@ class LoginViewController: UIViewController {
         self.QRSMLogoImage.image = #imageLiteral(resourceName: "qrsm-transparent")
     }
     
-    @IBAction func createButtonTapped(_ sender: UIButton) {
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        self.presentingViewController!.dismiss(animated: true)
     }
     
     @IBAction func instructionsButtonTapped(_ sender: UIButton) {

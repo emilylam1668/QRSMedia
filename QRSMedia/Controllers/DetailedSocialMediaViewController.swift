@@ -26,8 +26,8 @@ class DetailedSocialMediaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        createGradientLayer()
-        //gradientView.backgroundColor = UIColord
+        createGradientLayer()
+//        gradientView.backgroundColor = UIColor
 //        self.view.layer.addSublayer(gradient)
     
         companyLogoImageView.image = cellSocialMediaInfo.image
@@ -60,7 +60,7 @@ class DetailedSocialMediaViewController: UIViewController {
         let blue = UIColor(red: 94/255.0, green: 122/255.0, blue: 168/255.0, alpha: 1)
         
         gradientLayer.colors = [blue.cgColor, pink.cgColor]
-        self.view.layer.addSublayer(gradientLayer)
+        gradientView.layer.addSublayer(gradientLayer)
     }
 
     @IBAction func cancelButtonTapped(_ sender: Any) {
@@ -94,7 +94,6 @@ class DetailedSocialMediaViewController: UIViewController {
 
         let ud = UserDefaults.standard
 
-
         let key = cellSocialMediaInfo.companyTitle
         if let value = enterUsernameTextField.text {
             //save the value for the given key into user defaults
@@ -122,7 +121,7 @@ class DetailedSocialMediaViewController: UIViewController {
 
         if notification.name == Notification.Name.UIKeyboardWillShow ||
             notification.name == Notification.Name.UIKeyboardWillChangeFrame {
-                view.frame.origin.y = -keyboardRect.height
+                view.frame.origin.y = -keyboardRect.height + 64
         } else {
             view.frame.origin.y = 0
         }

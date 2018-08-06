@@ -24,6 +24,18 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         
         tableView.reloadData()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //check if user has already openpd app
+        
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: "hasUserAlreadyOpendAppBefore") == false {
+            self.performSegue(withIdentifier: "toIntroductionScreen", sender: nil)
+            ud.set(true, forKey: "hasUserAlreadyOpendAppBefore")
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
