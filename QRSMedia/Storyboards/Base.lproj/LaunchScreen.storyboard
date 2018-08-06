@@ -20,16 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrsmgradient" translatesAutoresizingMaskIntoConstraints="NO" id="KXo-Pc-wF5">
-                                <rect key="frame" x="-82.5" y="73.5" width="540" height="540"/>
+                                <rect key="frame" x="-82.5" y="63.5" width="540" height="540"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KXo-Pc-wF5" secondAttribute="height" multiplier="1:1" id="Pkz-D0-Rg2"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.41960784313725491" green="0.49803921568627452" blue="0.65490196078431373" alpha="0.55792487157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.41960784313725491" green="0.49803921568627452" blue="0.65490196078431373" alpha="0.3047142551369863" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0G3-w1-4bf"/>
-                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UQP-bE-rgf"/>
+                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0G3-w1-4bf"/>
+                            <constraint firstItem="KXo-Pc-wF5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UQP-bE-rgf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

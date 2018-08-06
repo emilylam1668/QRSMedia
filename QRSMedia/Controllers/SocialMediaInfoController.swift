@@ -31,7 +31,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         super.viewDidAppear(animated)
         
         //check if user has already opened app
-        
+
         let ud = UserDefaults.standard
         if ud.bool(forKey: "hasUserAlreadyOpendAppBefore") == false {
             self.performSegue(withIdentifier: "toIntroductionScreen", sender: nil)
@@ -65,6 +65,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    //Clears the username textfields
     @IBAction func clearButtonTapped(_ sender: Any) {
         let areYouSure = UIAlertController(title: "Are you sure?", message: "All usernames will be cleared", preferredStyle: .actionSheet)
         let cancel = UIAlertAction(title: "Cancel", style: .default) { (_) in
@@ -96,8 +97,9 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
+    //APP INSTRUCTIONS
     @IBAction func appInstructionsDidTap(_ sender: Any) {
-        let alertAppInstructions = UIAlertController(title: "How to generate QR code", message: "message", preferredStyle: .alert)
+        let alertAppInstructions = UIAlertController(title: "How to generate QR code", message: "   ", preferredStyle: .alert)
         let dismissButton = UIAlertAction(title: "Dismiss", style: .default)
         alertAppInstructions.addAction(dismissButton)
         
