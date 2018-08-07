@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         let ud = UserDefaults.standard
         ud.set(false, forKey: "hasUserAlreadyOpendBefore")
+        UINavigationBar.appearance().barStyle = .blackOpaque
         return true
     }
 

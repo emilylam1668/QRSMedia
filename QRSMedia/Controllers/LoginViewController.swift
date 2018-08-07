@@ -47,5 +47,7 @@ class LoginViewController: UIViewController {
         gradientLayer.colors = [blue.cgColor, pink.cgColor]
         gradientView.layer.addSublayer(gradientLayer)
     }
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }

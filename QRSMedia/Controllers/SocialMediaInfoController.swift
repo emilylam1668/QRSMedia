@@ -126,5 +126,7 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
             print("ya ya ya")
         }
     }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
-
