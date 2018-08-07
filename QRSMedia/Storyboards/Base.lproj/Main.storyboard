@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VVL-t7-Ldc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="538"/>
-                                <color key="backgroundColor" red="0.96442420179999999" green="0.96562797310000004" blue="0.97307265229999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.82505155456852797" green="0.82505155456852797" blue="0.82505155456852797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexBackgroundColor" red="0.37904540479999999" green="0.47615335850000001" blue="0.55749732070000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="95" id="ngp-Kd-eaA" customClass="CompanyDataCell" customModule="QRSMedia" customModuleProvider="target">
@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.96953272741095631" green="0.97644562741100915" blue="0.99718432741116747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.6616025271" green="0.58850561420000003" blue="0.72541243649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="VVL-t7-Ldc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EyF-b2-eoT"/>
                             <constraint firstItem="VVL-t7-Ldc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IXN-fn-vYj"/>

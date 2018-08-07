@@ -9,7 +9,7 @@
 import UIKit
 
 class SocialMediaInfoController: UIViewController, UITableViewDataSource {
-    
+
     @IBAction func test(_ sender: UIButton) {
         print("test")
     }
@@ -37,14 +37,11 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
             self.performSegue(withIdentifier: "toIntroductionScreen", sender: nil)
             ud.set(true, forKey: "hasUserAlreadyOpendBefore")
         }
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
     }
     
     let companyUserData = CompanyUserData()
@@ -70,16 +67,15 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
     //Clears the username textfields
     @IBAction func clearButtonTapped(_ sender: Any) {
         let areYouSure = UIAlertController(title: "Are you sure?", message: "All usernames will be cleared", preferredStyle: .actionSheet)
-        let cancel = UIAlertAction(title: "Cancel", style: .default) { (_) in
-            
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
         }
-                
+        cancel.setValue(UIColor.red, forKey: "titleTextColor")
         let keepGoing = UIAlertAction(title: "Continue", style: .default) { (_) in
             self.companyUserData.resetUsernameValues()
             self.tableView.reloadData()
         }
-        areYouSure.addAction(cancel)
         areYouSure.addAction(keepGoing)
+        areYouSure.addAction(cancel)
         
         self.present(areYouSure, animated: true)
     }
