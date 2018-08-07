@@ -30,6 +30,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func instructionsButtonTapped(_ sender: UIButton) {
+        let alertAppInstructions = UIAlertController(title: "How to generate QR code", message: "Click on each row to edit the displayed username. If you don't use a social media platform, you may leave it blank. Press on create QR code to generate your own QR and save it to your camera roll to share with others!", preferredStyle: .alert)
+        let dismissButton = UIAlertAction(title: "Dismiss", style: .default)
+        alertAppInstructions.addAction(dismissButton)
+        
+        self.present(alertAppInstructions, animated: true)
     }
     
     func createGradientLayer() {
