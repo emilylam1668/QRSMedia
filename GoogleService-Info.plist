@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>882499391418-cf20g81bd1eso24440aapa8givph3qjv.apps.googleusercontent.com</string>
+	<string>882499391418-nqpa55cu5bjde34j7qnk3tgo9erc1qae.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.882499391418-cf20g81bd1eso24440aapa8givph3qjv</string>
+	<string>com.googleusercontent.apps.882499391418-nqpa55cu5bjde34j7qnk3tgo9erc1qae</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAb_GxJ1KXNcuVlS2Q6DgQVBA6PeCZ-gi8</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.makeschool.QRSMedia</string>
+	<string>com.lam.emily.QRSM</string>
 	<key>PROJECT_ID</key>
 	<string>smqrbuilder</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:882499391418:ios:7a91aef95db7e7aa</string>
+	<string>1:882499391418:ios:d67f315a977f8a8b</string>
 	<key>DATABASE_URL</key>
 	<string>https://smqrbuilder.firebaseio.com</string>
 </dict>

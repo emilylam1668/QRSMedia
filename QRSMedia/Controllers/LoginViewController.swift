@@ -25,6 +25,11 @@ class LoginViewController: UIViewController {
         self.QRSMLogoImage.image = #imageLiteral(resourceName: "qrsm-transparent")
     }
     
+    
+    @IBAction func aboutButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "nextView", sender: self)
+    }
+    
     @IBAction func doneButtonTapped(_ sender: UIButton) {
         self.presentingViewController!.dismiss(animated: true)
     }

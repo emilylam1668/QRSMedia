@@ -59,6 +59,9 @@ class SocialMediaInfoController: UIViewController, UITableViewDataSource {
         cell.companyName.text = socialMediaInfo.companyTitle
         cell.logoImageView.image = socialMediaInfo.image
         cell.usernameLabel.text = socialMediaInfo.username
+        cell.usernameLabel.adjustsFontSizeToFitWidth = true
+        cell.usernameLabel.minimumScaleFactor = 0.2
+        
         cell.contentView.backgroundColor = colorForIndex(index: indexPath.row)
         
         return cell

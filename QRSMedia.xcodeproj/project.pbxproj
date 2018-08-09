@@ -11,8 +11,8 @@
 		D713FF33211260530034A410 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF32211260530034A410 /* StorageService.swift */; };
 		D713FF35211260930034A410 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF34211260930034A410 /* MediaService.swift */; };
 		D713FF772117AC200034A410 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF762117AC200034A410 /* LoginViewController.swift */; };
-		D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */; };
-		D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */; };
+		D713FF79211BB41B0034A410 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D713FF78211BB41B0034A410 /* GoogleService-Info.plist */; };
+		D713FF7B211BE2CD0034A410 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713FF7A211BE2CD0034A410 /* AboutViewController.swift */; };
 		D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730372105A3B500DDBAFD /* AppDelegate.swift */; };
 		D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */; };
 		D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B7303B2105A3B500DDBAFD /* Main.storyboard */; };
@@ -33,8 +33,8 @@
 		D713FF32211260530034A410 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		D713FF34211260930034A410 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D713FF762117AC200034A410 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotService.swift; sourceTree = "<group>"; };
+		D713FF78211BB41B0034A410 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D713FF7A211BE2CD0034A410 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		D7B730342105A3B500DDBAFD /* QRSMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRSMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B730372105A3B500DDBAFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7B730392105A3B500DDBAFD /* SocialMediaInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaInfoController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,6 @@
 			children = (
 				D7B730742106A97600DDBAFD /* SocialMediaInfo.swift */,
 				D7B730782107D74A00DDBAFD /* CoreDataHelper.swift */,
-				D73EF08E210EDCD700FDB394 /* ScreenshotService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,7 +128,7 @@
 				D7B7307B2109180F00DDBAFD /* Custom Cells */,
 				D7B730412105A3B700DDBAFD /* Assets.xcassets */,
 				D7B730462105A3B700DDBAFD /* Info.plist */,
-				D73EF089210BEEB700FDB394 /* GoogleService-Info.plist */,
+				D713FF78211BB41B0034A410 /* GoogleService-Info.plist */,
 				D7B7303E2105A3B500DDBAFD /* QRSMedia.xcdatamodeld */,
 			);
 			path = QRSMedia;
@@ -142,6 +141,7 @@
 				D7B7306E2106A01D00DDBAFD /* QRViewController.swift */,
 				D7B7306C21069FA800DDBAFD /* DetailedSocialMediaViewController.swift */,
 				D713FF762117AC200034A410 /* LoginViewController.swift */,
+				D713FF7A211BE2CD0034A410 /* AboutViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B730452105A3B700DDBAFD /* LaunchScreen.storyboard in Resources */,
-				D73EF08A210BEEB700FDB394 /* GoogleService-Info.plist in Resources */,
+				D713FF79211BB41B0034A410 /* GoogleService-Info.plist in Resources */,
 				D7B730422105A3B700DDBAFD /* Assets.xcassets in Resources */,
 				D7B7303D2105A3B500DDBAFD /* Main.storyboard in Resources */,
 			);
@@ -310,13 +310,13 @@
 				D7B7306F2106A01D00DDBAFD /* QRViewController.swift in Sources */,
 				D7B7306D21069FA800DDBAFD /* DetailedSocialMediaViewController.swift in Sources */,
 				D7B7303A2105A3B500DDBAFD /* SocialMediaInfoController.swift in Sources */,
+				D713FF7B211BE2CD0034A410 /* AboutViewController.swift in Sources */,
 				D713FF33211260530034A410 /* StorageService.swift in Sources */,
 				D7B730752106A97600DDBAFD /* SocialMediaInfo.swift in Sources */,
 				D7B730792107D74A00DDBAFD /* CoreDataHelper.swift in Sources */,
 				D7B730382105A3B500DDBAFD /* AppDelegate.swift in Sources */,
 				D7B730712106A1D800DDBAFD /* CompanyDataCell.swift in Sources */,
 				D713FF772117AC200034A410 /* LoginViewController.swift in Sources */,
-				D73EF08F210EDCD700FDB394 /* ScreenshotService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M725MZ6Y9;
 				INFOPLIST_FILE = QRSMedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lam.emily.QRSM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -483,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M725MZ6Y9;
 				INFOPLIST_FILE = QRSMedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lam.emily.QRSM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

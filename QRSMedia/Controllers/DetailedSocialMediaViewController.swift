@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class DetailedSocialMediaViewController: UIViewController {
+class DetailedSocialMediaViewController: UIViewController, UITextFieldDelegate {
 
     var gradientLayer: CAGradientLayer!
     
@@ -25,10 +25,8 @@ class DetailedSocialMediaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        enterUsernameTextField.delegate = self
         createGradientLayer()
-//        gradientView.backgroundColor = UIColor
-//        self.view.layer.addSublayer(gradient)
     
         companyLogoImageView.image = cellSocialMediaInfo.image
         companyNameLabel.text = cellSocialMediaInfo.companyTitle
@@ -41,15 +39,10 @@ class DetailedSocialMediaViewController: UIViewController {
 
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        createGradientLayer()
-//    }
-    
     //code to dismiss function in swift 1
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ enterUsernameTextField: UITextField) -> Bool {
         self.view.endEditing(true)
-        return false
+        return true
     }
     
     func createGradientLayer() {
@@ -62,7 +55,7 @@ class DetailedSocialMediaViewController: UIViewController {
         gradientLayer.colors = [blue.cgColor, pink.cgColor]
         gradientView.layer.addSublayer(gradientLayer)
     }
-
+    
     @IBAction func cancelButtonTapped(_ sender: Any) {
         if enterUsernameTextField.text == cellSocialMediaInfo.username {
             navigationController!.popViewController(animated: true)
@@ -123,7 +116,7 @@ class DetailedSocialMediaViewController: UIViewController {
             notification.name == Notification.Name.UIKeyboardWillChangeFrame {
                 view.frame.origin.y = -keyboardRect.height + 64
         } else {
-            view.frame.origin.y = 0
+            view.frame.origin.y = 64
         }
     }
 }
